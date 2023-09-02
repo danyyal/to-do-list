@@ -31,6 +31,10 @@ git clone git@github.com:danyyal/to-do-list.git
 Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
 
 ```bash
+cd to-do-list/
+```
+
+```bash
 npm install # or yarn
 ```
 
