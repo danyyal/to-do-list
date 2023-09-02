@@ -1,0 +1,15 @@
+.task-item {
+  max-width: 350px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+  flex-basis: calc(25% - 20px);
+}
+
+.task-done {
+  text-decoration: line-through;
+}
