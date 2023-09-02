@@ -18,6 +18,7 @@ A minimalistic, customisable todo app.
 
 - Github - [@danyyal](https://www.github.com/danyyal)
 - Github - [@danyyalAli](https://www.github.com/danyyalAli)
+- LinkedIn - [@danyyalAli](https://www.linkedin.com/in/sheikh-danyyal-ali-08b768193/)
 
 ## Instructions
 
