@@ -9,19 +9,21 @@ const TasksList = ({}) => {
 
   return (
     <>
-      <span
-        onClick={() => {
-          const filtered = tasks.filter(
-            (val: Task) => val.done
-          );
-          const indexes = filtered.map(
-            (val: Task, index: number) => index
-          );
-          filterTasks(indexes);
-        }}
-        className="clear-completed"
-      >
-        Clear Completed
+      <span className="clear-completed">
+        <div
+          className="clear-completed-text"
+          onClick={() => {
+            const indexes: number[] = [];
+            tasks.map((val: Task, index: number) => {
+              if (val.done === true) {
+                indexes.push(index);
+              }
+            });
+            filterTasks(indexes);
+          }}
+        >
+          Clear Completed
+        </div>
       </span>
       <ul>
         {tasks.map((task: Task, index: number) => (
