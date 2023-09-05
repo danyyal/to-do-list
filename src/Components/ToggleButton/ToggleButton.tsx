@@ -7,9 +7,9 @@ function ToggleButton() {
   const handleClick = () => {
     if (!isOn) {
       document.body.style.backgroundColor = "black";
-      document.body.style.color = "white";
+      document.body.style.color = "rgb(76, 144, 144)";
     } else {
-      document.body.style.backgroundColor = "white";
+      document.body.style.backgroundColor = "rgb(205, 218, 218)";
       document.body.style.color = "black";
     }
     setIsOn((prevState) => !prevState);
