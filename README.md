@@ -13,8 +13,8 @@ A minimalistic, customisable todo app.
 
 ## Built with
 
-- React Js, Css, Sass
-- React Hooks : useState, useEffect
+- React Js, Css, Sass, React icons
+- React Hooks : useState, useEffect, useContext
 
 ## Author
 
