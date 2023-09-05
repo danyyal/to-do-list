@@ -8,6 +8,8 @@ A minimalistic, customisable todo app.
 - Dark mode
 - Tasks saved locally
 - Deletion Pop up modal
+- React context Hook
+- local storage implemented
 
 ## Built with
 
