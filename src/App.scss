@@ -26,28 +26,6 @@ input[type="text"] {
   border-radius: 4px;
 }
 
-.task-item-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-}
-
-/* Style the parent container for tasks */
-.task-container {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-}
-
-.task-checkbox {
-  margin-right: 10px;
-}
-
-.task-text {
-  flex-grow: 1;
-}
-
 .add-new-item,
 .item {
   padding: 8px 16px;
@@ -58,7 +36,6 @@ input[type="text"] {
   border-radius: 4px;
   cursor: pointer;
   margin: 10px;
-  flex-basis: calc(25% - 20px);
 }
 .item {
   background-color: #f76c39;

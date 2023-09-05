@@ -1,11 +1,10 @@
-/* Toggle button styles */
+/* Common styles for both mobile and desktop */
 .toggle-button {
   position: absolute;
-  top: 10px; /* Adjust top and right values as needed */
-  right: 10px;
   padding: 10px;
-  width: 5dvb; /* Adjust button width as needed */
-  height: 30px; /* Adjust button height as needed */
+  right: 10px;
+  width: 50px; /* Default button width */
+  height: 30px; /* Default button height */
   background-color: #ccc;
   border-radius: 25px; /* Make it round */
   cursor: pointer;
@@ -23,8 +22,8 @@
 /* Dot for indicating the state */
 .toggle-dot {
   position: absolute;
-  width: 20px; /* Adjust dot size as needed */
-  height: 20px; /* Adjust dot size as needed */
+  width: 20px; /* Default dot size */
+  height: 20px; /* Default dot size */
   background-color: white;
   border-radius: 50%; /* Make it round */
   top: 15%;
@@ -33,9 +32,27 @@
 }
 
 .toggle-dot.on {
-  left: 22px; /* Position for "off" state */
+  left: 25px; /* Position for "off" state */
 }
 
 .toggle-dot.off {
   left: 5px; /* Position for "on" state */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Adjust button size and position for mobile */
+  .toggle-button {
+    width: 40px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+  }
+
+  /* Adjust dot size for mobile */
+  .toggle-dot {
+    width: 14px;
+    height: 14px;
+    top: -3px;
+  }
 }

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ConfirmationModal.scss";
 import { ModalProps } from "../../Types/Modal";
 
-const ConfirmationModal = ({ message, onConfirm }: ModalProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+const ConfirmationModal = ({
+  message,
+  onConfirm,
+  isOpen,
+  setIsOpen,
+}: ModalProps) => {
   return (
     <>
       <div className={`modal ${isOpen ? "open" : ""}`}>
@@ -25,9 +29,6 @@ const ConfirmationModal = ({ message, onConfirm }: ModalProps) => {
           </div>
         </div>
       </div>
-      <button className="item" onClick={() => setIsOpen(!isOpen)}>
-        Delete
-      </button>
     </>
   );
 };
